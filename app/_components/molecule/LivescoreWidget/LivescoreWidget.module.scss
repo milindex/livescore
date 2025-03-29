@@ -1,0 +1,137 @@
+.widgetContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+
+    &.active {
+      background-color: $color-accent;
+      color: #ffffff;
+      border-color: $color-accent;
+    }
+  }
+}
+
+.tabContent {
+  width: 100%;
+}
+
+.matchContainer {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .matchDetails {
+    margin-bottom: 15px;
+
+    .teams {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .venue {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 5px;
+    }
+
+    .status {
+      font-size: 14px;
+      color: $color-accent;
+    }
+  }
+
+  .inningsDetails {
+    margin-top: 10px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    div {
+      font-size: 14px;
+      margin-bottom: 5px;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.loadMoreButton {
+  display: block;
+  margin: 10px auto 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: $color-accent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+
+.loading {
+  font-size: 16px;
+  color: $color-accent;
+}
+
+.error {
+  font-size: 14px;
+  color: #ff4d4f;
+  text-align: center;
+}
+
+.noMatch {
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
